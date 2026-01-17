@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YARA SOFTWARE LAB - Vivo Android 15 Fix</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #1c1e21; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #1c1e21; line-height: 1.6; text-align: left; }
         header { background: linear-gradient(135deg, #004488 0%, #0066cc 100%); color: #fff; padding: 40px 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         .container { padding: 25px; max-width: 700px; margin: -30px auto 40px; background: #fff; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        h2, h3 { color: #004488; border-left: 4px solid #004488; padding-left: 10px; margin-top: 25px; }
-        .highlight-box { background: #e7f3ff; border-radius: 10px; padding: 15px; margin: 20px 0; border-left: 5px solid #1a73e8; }
-        .btn-download { display: block; background: #28a745; color: white; padding: 18px; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 1.2rem; text-align: center; margin: 25px 0; box-shadow: 0 5px 15px rgba(40,167,69,0.3); }
-        .code-block { background: #222; color: #0f0; padding: 15px; border-radius: 8px; font-family: monospace; overflow-x: auto; margin: 10px 0; }
-        .social-links { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
-        .social-btn { display: flex; align-items: center; justify-content: center; color: white; padding: 15px; text-decoration: none; border-radius: 10px; font-weight: bold; }
+        h1, h2, h3 { color: #004488; }
+        .section { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .highlight { background: #fff3cd; padding: 10px; border-left: 5px solid #ffc107; margin: 15px 0; }
+        .btn-download { display: block; background: #28a745; color: white; padding: 18px; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 1.2rem; text-align: center; margin: 20px 0; box-shadow: 0 5px 15px rgba(40,167,69,0.3); }
+        .adb-box { background: #222; color: #0f0; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; margin: 10px 0; overflow-x: auto; }
+        .social-links { display: flex; flex-direction: column; gap: 10px; margin-top: 25px; }
+        .social-btn { display: block; text-align: center; color: white; padding: 15px; text-decoration: none; border-radius: 10px; font-weight: bold; }
         .whatsapp { background: #25D366; } .instagram { background: #E1306C; } .tiktok { background: #000000; }
-        footer { text-align: center; padding: 30px; color: #65676b; font-size: 0.9rem; border-top: 1px solid #ddd; margin-top: 20px; }
+        footer { text-align: center; padding: 30px; color: #65676b; font-size: 0.9rem; border-top: 1px solid #ddd; }
         ul { padding-left: 20px; } li { margin-bottom: 8px; }
     </style>
 </head>
@@ -27,41 +28,65 @@
 </header>
 
 <div class="container">
-    <h2>How to Fix Play Store & Gmail Sign-in Issues on Vivo Android 15 FRP Bypass</h2>
-    
-    <p>Getting past the FRP lock on Vivo Android 15 is only half the battle. Many users face a major roadblock: the system doesn't allow adding a Google Account or using the Play Store even after bypass.</p>
-
-    <div class="highlight-box">
-        <strong>The Problem:</strong> Standard bypass methods lead to a "half-bypass" where you can't add Gmail, Play Store is inaccessible, and system apps won't update.
+    <div class="section">
+        <h2>How to Fix Play Store & Gmail Sign-in Issues on Vivo Android 15 FRP Bypass</h2>
+        <p>• Getting past the FRP (Factory Reset Protection) lock on Vivo Android 15 is only half the battle. Many users are facing a major roadblock: even after bypassing the initial lock, the system doesn't allow adding a Google Account, setting a new Screen Lock, or using the Play Store.</p>
+        <p>• If you can't download or update apps because the Play Store is stuck, I have found a perfect workaround.</p>
     </div>
 
-    <h3>The Solution: A Play Store Alternative</h3>
-    <p>I have tested a specific application that works exactly like the Play Store. It allows you to search, download, and update apps without needing a Google sign-in.</p>
-
-    <a href="play-store-fix.zip" class="btn-download">⬇️ Download Play Store Fix Tool (ZIP)</a>
-
-    <h3>Why Use This Method?</h3>
-    <p>Unlike risky firmware downgrading, this "App Store" approach is safe, fast, and doesn't require a PC. It’s a lifesaver for technicians.</p>
-
-    <div class="highlight-box" style="background: #fff3cd; border-color: #ffc107;">
-        <strong>Pro Tip: Install via ADB</strong><br>
-        Since Android 15 has strict restrictions, I recommend installing via ADB for a clean installation.
+    <div class="section">
+        <h3>The Problem: Restricted Access on Android 15</h3>
+        <p>• In the latest Android 15 update, Vivo has enhanced its security layers. Standard bypass methods often lead to a "half-bypass" state where:</p>
+        <ul>
+            <li>You cannot add a Gmail account in settings.</li>
+            <li>The Play Store remains inaccessible.</li>
+            <li>System apps cannot be updated.</li>
+        </ul>
     </div>
 
-    <h3>Installation Steps:</h3>
-    <ul>
-        <li>Enable USB Debugging on your Vivo device.</li>
-        <li>Connect the phone to your PC.</li>
-        <li>Use the following command:</li>
-    </ul>
-    <div class="code-block">adb install play-store-fix.apk</div>
+    <div class="section">
+        <h3>The Solution: A Play Store Alternative</h3>
+        <p>• Since the official Play Store is blocked due to the incomplete account sync, the best way to make the device fully functional is by using a high-quality Third-Party App Store.</p>
+        <p>• I have tested a specific application that works exactly like the Play Store. It allows you to:</p>
+        <ul>
+            <li>Search and Download any app (WhatsApp, Facebook, etc.).</li>
+            <li>Install Apps without needing a Google sign-in.</li>
+            <li>Update existing system apps effortlessly.</li>
+        </ul>
+        <div class="highlight"><strong>Note:</strong> This method ensures your device is usable even when the core Google Play Services are restricted after a bypass.</div>
+        
+        <a href="play-store-fix.zip" class="btn-download">⬇️ Download Play Store Fix Tool (ZIP)</a>
+    </div>
 
-    <h3>Why This App is a Game Changer?</h3>
-    <ul>
-        <li><strong>Full Access:</strong> One-click download for WhatsApp, Facebook, etc.</li>
-        <li><strong>No Gmail Required:</strong> Bypasses the need for a Google Account.</li>
-        <li><strong>Auto-Updates:</strong> Keeps your apps current effortlessly.</li>
-    </ul>
+    <div class="section">
+        <h3>Why Use This Method?</h3>
+        <p>Unlike other methods that require risky firmware downgrading, this "App Store" approach is safe, fast, and doesn't require a PC. It’s a lifesaver for mobile software technicians and users who need their phones running immediately.</p>
+    </div>
+
+    <div class="section">
+        <h3>Pro Tip: How to Install the App Safely via ADB</h3>
+        <p>Since Android 15 has strict restrictions on manual APK installations after a bypass, I recommend installing this app via ADB (Android Debug Bridge). This method is much safer, bypasses system blocks, and ensures a clean installation.</p>
+        
+        <strong>Installation Steps:</strong>
+        <ul>
+            <li>Enable USB Debugging on your Vivo device.</li>
+            <li>Connect the phone to your PC.</li>
+            <li>Use the command:</li>
+        </ul>
+        <div class="adb-box">adb install play-store-fix.apk</div>
+        <p>• Once the installation is complete, you are ready to go!</p>
+    </div>
+
+    <div class="section">
+        <h3>Why This App is a Game Changer?</h3>
+        <p>Once you open this app, you’ll realize it’s the perfect replacement for the Play Store. It offers a seamless experience without the headache of Gmail sign-in errors.</p>
+        <ul>
+            <li><strong>Full Access:</strong> Download and install any app or game with just one click.</li>
+            <li><strong>Seamless Updates:</strong> Just like the official Play Store, it handles all your app updates effortlessly.</li>
+            <li><strong>Auto-Update Feature:</strong> It supports Auto-Updates, so your apps stay current without any manual intervention.</li>
+            <li><strong>No Gmail Required:</strong> It bypasses the need for a Google Account, making it the ultimate solution for a full FRP bypass on Android 15.</li>
+        </ul>
+    </div>
 
     <h3 style="text-align: center; border: none;">Contact GSM_YARA</h3>
     <div class="social-links">
